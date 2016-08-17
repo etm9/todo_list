@@ -22,8 +22,12 @@ default: &default
   pool: 5
 
 development:
-  <<: *default
-  database: todo_list_development
+  adapter: postgresql
+  encoding: unicode
+  database: todolist1
+  pool: 5
+  username: todolist
+  password: 123456789
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
